@@ -1,0 +1,152 @@
+.main-container{
+	width: 100%;
+}
+.flex-container{
+	width: 100%;
+	display:flex;
+	background-color:black;
+	height: 50px;
+}
+.menu{
+	min-width: 20%;
+	color:white;
+	font-size: 0.5cm;
+	text-align: center;	
+	padding-top: 20px;
+}
+a:hover{
+	color:grey;
+	font-size: 0.6cm;
+}
+#banner-image{
+	width: 100%;
+}
+#banner-image:hover{
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	border-bottom-color: grey;
+	opacity: 0.8;
+}
+.banner-title{
+	position:absolute;
+	top:25%;
+	left:30%;
+	font-size: 0.8cm;
+}
+.banner-subtitle{
+	position:absolute;
+	top:55%;
+	left:35%;
+	font-size:0.6cm;
+}
+.heading{
+	display: flex;
+	widows: 100px;
+	height: 100px
+	margin-top:50px;
+	font-size: 1.5cm;
+	margin-bottom:10px;
+}
+.title{
+	margin-left: 37%;
+	margin-top:100px;
+}
+.contact-flex{
+	display: flex;
+	width: 100%;
+	flex-direction:row;
+	height: 100px;
+}
+.contact-type{
+	width:70%;
+	height:50px;
+	font-size: 0.6cm;
+	margin-bottom: 10px;
+	margin-left: 3%
+}
+#contact-icon{
+	margin-left:5%;
+	height: 50px;
+	width: 50px;
+	border-bottom-color: grey;
+	border: 1px solid #ddd;
+ 	border-radius: 4px;
+}
+#contact-icon:hover{
+	border: 1px solid white;
+ 	border-radius: 4px;
+ 	border-bottom-color: black;
+    height: 60px;
+	width: 60px;
+}
+.contact-feature{
+	font-size: 0.5cm;
+	margin-top: 2%;
+	margin-left: 7%;
+}
+.contact-feature-information{
+	margin-top: 2%;
+	margin-left: 15%;
+	color: grey;
+	font-size: 0.6cm;
+	margin-right: 10%;
+}
+.bottom-container{
+	width: 100%;
+}
+.flex-bottom-container{
+	width: 100%;
+	display:flex;
+	background-color:grey;
+	height: 30px;
+	color: white;
+}
+#linkedin-icon{
+	height: 25px;
+	width: 30px;
+	margin-top: 2.5px;
+	margin-left: 20px;
+}
+#linkedin-icon:hover{
+	height: 30px;
+	width: 35px;
+	margin-top: 0px;
+ }
+#twitter-icon{
+	height: 25px;
+	width: 30px;
+	margin-top: 2.5px;
+	margin-left: 20px;
+}
+#twitter-icon:hover{
+	height: 30px;
+	width: 35px;
+	margin-top: 0px;
+ }
+#facebook-icon{
+	height: 25px;
+	width: 30px;
+	margin-top: 2.5px;
+	margin-left: 20px;
+}
+#facebook-icon:hover{
+	height: 30px;
+	width: 35px;
+	margin-top: 0px;
+ }
+#gmail-icon{
+	height: 25px;
+	width: 30px;
+	margin-top: 2.5px;
+	margin-left: 20px;
+}
+#gmail-icon:hover{
+	height: 30px;
+	width: 35px;
+	margin-top: 0px;
+ }
+.copyright-details{
+	margin-top: 10px;
+	margin-left: 5px;
+	width:80%;
+}

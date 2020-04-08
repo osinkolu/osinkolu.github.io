@@ -1,0 +1,230 @@
+body{ background-color:;
+	
+}
+.main-container{
+	width: 100%;
+}
+.flex-container{
+	width: 100%;
+	display:flex;
+	background-color:black;
+	height: 50px;
+}
+.menu{
+	min-width: 20%;
+	color:white;
+	font-size: 0.5cm;
+	text-align: center;	
+	padding-top: 20px;
+}
+a:hover{
+	color:grey;
+	font-size: 0.6cm;
+}
+#banner-image{
+	width: 100%;
+	opacity:0.8;
+}
+.banner-title{
+	position:absolute;
+	top:25%;
+	left:30%;
+	font-size: 1.8cm;
+}
+.banner-subtitle{
+	position:absolute;
+	top:40%;
+	left:35%;
+	font-size:0.6cm;
+}
+
+.skill-container{
+	display: flex;
+	width: 100%;
+	justify-content:center;
+	height: 500px
+	margin-top:50px;
+	flex-direction: row;
+	margin-left: auto;
+}
+.skill1{
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
+	justify-content: center;
+}
+#image{
+	width:70px;
+	height: 70px;
+	margin-right: 10px;
+}
+#skill-text{
+	color: black;
+	margin-top: 30px;
+	font-weight:bold;
+	font size:2cm;
+	margin-right:25px;
+}
+.skill-heading{
+	display:flex;
+	widows:100px;
+	height:70px;
+	color:black;
+	font-size: 1.5cm;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.skill-title{
+	margin-left: 40%;
+	margin-top:15px;
+}
+.portfolio-heading{
+	display: flex;
+	widows: 100px;
+	height: 100px
+	margin-top:50px;
+	font-size: 1.5cm;
+	margin-bottom:10px;
+}
+.portfolio-combo{
+	display: flex;
+	flex-direction:column;
+
+}
+.portfolio-title{
+	margin-left: 37%;
+	margin-top:100px;
+
+}
+.portfolio-container{
+	display: flex;
+	margin-left: 50px;
+	margin-top:50px;
+
+}
+#portfolio_img{
+	height: 90%;
+	width:70%;
+	margin-left:5%;
+}
+#portfolio_img2{
+	height: 100%;
+	width:100%;
+	margin-left:5%;
+}
+.portfolio-description{
+	margin-left: -120px;
+	margin-top: 20px;
+}
+.portfolio-description2{
+	margin-left: 70px;
+	margin-top: 20px;
+}
+
+.portfolio-name{
+	font-size: 0.6cm;
+	margin-left: 20px
+
+}
+
+.portfolio-info{
+	font-size: 0.4cm;
+	margin-left: 20px;
+	color: grey;
+}
+hr{
+	width: 50%;
+	align-self:center;
+}
+.testimonials{
+	display: flex;
+	width: 100%;
+	flex-direction:column;
+}
+#avatar{
+	margin-left: 30%;
+	height: 25%;
+	width: 25%;
+	margin-top: 50px;
+}
+.client-name{
+	width:70%;
+	height:50px;
+	font-size: 1cm;
+	margin-left: 30%;
+}
+.client-designation{
+	width:75%;
+	height:50px;
+	margin-left: 25%;
+	color: grey;
+	font-size: 0.6cm;
+
+}
+.client-testimonial{
+	width:85%;
+	height:50px;
+	margin-left: 15%;
+	color: grey;
+	font-size: 0.6cm;
+	font-style: italic;
+}
+.bottom-container{
+	width: 100%;
+}
+.flex-bottom-container{
+	width: 100%;
+	display:flex;
+	background-color:grey;
+	height: 30px;
+	color: white;
+}
+#linkedin-icon{
+	height: 25px;
+	width: 30px;
+	margin-top: 2.5px;
+	margin-left: 20px;
+}
+#linkedin-icon:hover{
+	height: 30px;
+	width: 35px;
+	margin-top: 0px;
+ }
+#twitter-icon{
+	height: 25px;
+	width: 30px;
+	margin-top: 2.5px;
+	margin-left: 20px;
+}
+#twitter-icon:hover{
+	height: 30px;
+	width: 35px;
+	margin-top: 0px;
+ }
+#facebook-icon{
+	height: 25px;
+	width: 30px;
+	margin-top: 2.5px;
+	margin-left: 20px;
+}
+#facebook-icon:hover{
+	height: 30px;
+	width: 35px;
+	margin-top: 0px;
+ }
+#gmail-icon{
+	height: 25px;
+	width: 30px;
+	margin-top: 2.5px;
+	margin-left: 20px;
+}
+#gmail-icon:hover{
+	height: 30px;
+	width: 35px;
+	margin-top: 0px;
+ }
+.copyright-details{
+	margin-top: 10px;
+	margin-left: 5px;
+	width:80%;
+}
