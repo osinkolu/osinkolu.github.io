@@ -31,7 +31,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  color: white;
+  color: black;
 }
 </style>
 
@@ -41,22 +41,22 @@ body {
 <form id="paystackpaymentForm">
   <div class="form-group">
     <label for="email">Email Address</label>
-    <input type="email" id="paystack-email-address" required />
+    <input type="email" id="paystack-email-address" placeholder="email address" required />
   </div>
   <p></p>
   <div class="form-group">
     <label for="amount">Amount Naira.</label>
-    <input type="tel" id="paystack-amount" required />
+    <input type="tel" id="paystack-amount" placeholder="equivalent amount in naira" required />
   </div>
   <p></p>
   <div class="form-group">
     <label for="first-name">First Name......</label>
-    <input type="text" id="first-name" />
+    <input type="text" placeholder="First Name" id="first-name" />
   </div>
   <p></p>
   <div class="form-group">
     <label for="last-name">Last Name.......</label>
-    <input type="text" id="last-name" />
+    <input type="text" placeholder="Surname" id="last-name" />
   </div>
   <p></p>
   <div class="form-submit">
@@ -88,22 +88,27 @@ body {
 
   <div class="form-group">
     <label for="email">Email Address</label>
-    <input type="flutterwave-email-address" id="flutterwave-email-address" required />
+    <input type="flutterwave-email-address" id="flutterwave-email-address" 
+    placeholder="Email" 
+    required />
   </div>
   <p></p>
   <div class="form-group">
     <label for="flutterwave-amount">Amount Naira</label>
-    <input type="tel" id="flutterwave-amount" required />
+    <input type="tel" id="flutterwave-amount" 
+    placeholder="Equivalent amount in Naira" 
+    required />
   </div>
   <p></p>
   <div class="form-group">
     <label for="phone-number">Phone Number</label>
-    <input type="text" id="flutterwave-phone-number" />
+    <input type="text" id="flutterwave-phone-number"
+    placeholder="Number" />
   </div>
   <p></p>
   <div class="form-group">
     <label for="fullName">Full Name......</label>
-    <input type="text" id="fullName" />
+    <input type="text" id="fullName" placeholder="Your full Name" />
   </div>
   <p></p>
   <div class="form-submit"><form>
@@ -153,6 +158,16 @@ body {
     
 
 
+<p> </p>
+<p> </p>
+<strong>
+
+You can use the money conversion tool below to estimate the amount in naira which you intend to send. kindly note that the conversion is an estimate, your bank may have slight variation with this rate. The converter is a widget from themoneyconverter.com
+</strong>.
+<p> </p>
+
+<!-- This is the section holding the iframe for the currency conversion by the money converter.com-->
+<iframe width="251" height="348" id="themoneyconverter-maxi" src="https://themoneyconverter.com/CurrencyConverter?tab=0&amp;bg=ffffff&amp;from=USD&amp;to=NGN" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" seamless="seamless" __idm_frm__="205"></iframe>
 
 
 
