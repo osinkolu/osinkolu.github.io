@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="paystack.css">
+	<title>
+		Transfer to Victor
+	</title>
+</head>
+<body>
+
+		<a href="portfolio.html"><strong> Back to Olufemi Victor's portfolio</strong></a><p> </p>
+
+	<div class="welcomeNote">
+		<h2> Welcome to victor's payment gateway, you can send money to victor from anywhere in the world through the following means</h2>
+	</div>
+	<p></p>
+
+	<div class="usepaystack"><h3>
+		<img id="paystack-icon" src="images/paystack-logo.png">
+		Use Paystack</h3>
+
+		paystack lets you send money from anywhere in the world using your debit or credit cards.
+	</div>
+	<p> </p>
+
+  <!-- This is the background image below--> 
+
+	<style>
+body {
+  background-image: url('images/card.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color: white;
+}
+</style>
+
+ <!--Here, i begun implementing the form for collecting details for the paystack payment. --> 
+
+
+<form id="paystackpaymentForm">
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input type="email" id="paystack-email-address" required />
+  </div>
+  <p></p>
+  <div class="form-group">
+    <label for="amount">Amount Naira.</label>
+    <input type="tel" id="paystack-amount" required />
+  </div>
+  <p></p>
+  <div class="form-group">
+    <label for="first-name">First Name......</label>
+    <input type="text" id="first-name" />
+  </div>
+  <p></p>
+  <div class="form-group">
+    <label for="last-name">Last Name.......</label>
+    <input type="text" id="last-name" />
+  </div>
+  <p></p>
+  <div class="form-submit">
+    <button type="submit" onclick="payWithPaystack()"> Pay </button>
+  </div>
+</form>
+<script src="https://js.paystack.co/v1/inline.js"></script>
+<script src="paystack.js"></script> 
+
+
+
+ <!-- From Above, you'll notice that the javascript code is not here, i put it in a separate file, and it still ran smoothly. For the Flutterwave own below, i encountered lot of stress sepatating it, hence, i kept the code here--> 
+
+<p> </p>
+<p> </p>
+
+<div class="usepaystack"><h3>
+    <img id="paystack-icon" src="images/flutterwave-logo.png">
+    Use Flutterwave</h3>
+
+    Flutterwave lets you send money from anywhere in the world using your debit or credit cards.
+  </div>
+  <p> </p>
+
+
+
+<form id="flutterwavepaymentForm">
+   
+
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input type="flutterwave-email-address" id="flutterwave-email-address" required />
+  </div>
+  <p></p>
+  <div class="form-group">
+    <label for="flutterwave-amount">Amount Naira</label>
+    <input type="tel" id="flutterwave-amount" required />
+  </div>
+  <p></p>
+  <div class="form-group">
+    <label for="phone-number">Phone Number</label>
+    <input type="text" id="flutterwave-phone-number" />
+  </div>
+  <p></p>
+  <div class="form-group">
+    <label for="fullName">Full Name......</label>
+    <input type="text" id="fullName" />
+  </div>
+  <p></p>
+  <div class="form-submit"><form>
+  <script src="https://checkout.flutterwave.com/v3.js"></script>
+  <button type="button" onClick="makePayment()">Pay Now</button>
+</form>
+
+<script>
+  function makePayment() {
+    const pubkey = "FLWPUBK-272171fed04e1d754a6517829040b921-X";
+    const amount = document.getElementById('flutterwave-amount').value;
+    const email = document.getElementById('flutterwave-email-address').value;
+    const Phone = document.getElementById('flutterwave-phone-number').value;
+    const fullName = document.getElementById('fullName').value;
+    FlutterwaveCheckout({
+      public_key: pubkey,
+      tx_ref: "Paid-via-website",
+      amount: amount,
+      currency: "NGN",
+      country: "NG",
+      payment_options: "card, mobilemoneyghana, ussd",
+      redirect_url: // specified redirect URL
+        "https://callbacks.piedpiper.com/flutterwave.aspx?ismobile=34",
+      meta: {
+        consumer_id: 23,
+        consumer_mac: "92a3-912ba-1192a",
+      },
+      customer: {
+        email: email,
+        phone_number: Phone,
+        name: fullName,
+      },
+      callback: function (data) {
+        console.log(data);
+      },
+      onclose: function() {
+        // close modal
+      },
+      customizations: {
+        title: "Olufemi Victor Tolulope",
+        description: "You are about to credit Victor's account with some funds, thanks.",
+        logo: "https://assets.piedpiper.com/logo.png",
+      },
+    });
+  }
+</script></div></form>
+    
+
+
+
+
+
+
+
+
+
+ <!-- The footer of the website--> 
+
+
+
+
+
+<p> </p>
+<footer>
+<div class="bottom-container">
+		<div class="flex-bottom-container">
+			<div class="copyright-details">
+			copyright &copy 2020 OlufemiVictorWebsite. Designed and developed by Olufemi Victor.
+			</div>
+			<a href="mailto: femiosinkolu@gmail.com" target= _blank><img id="gmail-icon" src="images/gmail.png"></a>
+			<a href="https://www.linkedin.com/in/victor-olufemi-a44924192/" target= _blank><img id="linkedin-icon" src="images/linkedin.png"></a>
+			<a href="https://twitter.com/profvictor001" target= _blank><img id="twitter-icon" src="images/twitter.png"></a>
+			<a href="https://www.facebook.com/profile.php?id=100009859840576" target= _blank><img id="facebook-icon" src="images/facebook.png"></a>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>
